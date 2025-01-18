@@ -1,0 +1,122 @@
+.notes-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Remove fixed height so it can scroll */
+  min-height: 100vh; 
+  overflow-y: auto; 
+  padding: 20px;
+  background-color: #f9f9f9; 
+}
+
+.notes-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.notes-page p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.field-select-card, .note-history {
+  width: 90%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.field-select-card label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+.field-select-card select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 300px;
+}
+
+.note-history h3 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.history-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.history-table td {
+  background-color: #fff;
+  color: #333;
+}
+
+.history-table td:last-child {
+  text-align: center;
+}
+
+.no-history {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin: 20px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#new-note-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+#new-note-input::placeholder {
+  color: #aaa;
+}
+
+.actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}

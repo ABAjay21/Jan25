@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;  /* prevent horizontal scroll */
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Ensure all elements use box-sizing: border-box */
+}
+
+#root {
+  /* Let the root fill the viewport, but allow content to scroll if needed */
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1; /* allow the App to grow/shrink */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

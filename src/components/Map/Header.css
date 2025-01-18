@@ -1,0 +1,86 @@
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 999; /* keep above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #f9f9f9, #e9ecef);
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #444;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* allow wrapping on very small screens */
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Slight hover effect for nav links */
+.header-nav a:hover {
+  color: #555;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Small-screen adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0.5rem 1rem;
+  }
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Logout button styling */
+.logout-button {
+  background-color: #0b2f55; /* Primary blue */
+  color: white; /* White text for contrast */
+  border: none; /* Remove borders */
+  border-radius: 4px; /* Rounded corners */
+  padding: 0.5rem .5rem; /* Add padding for a better click area */
+  font-size: .75rem; /* Adjust font size */
+  font-weight: 500; /* Slightly bold text */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.logout-button:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Focus and active state for accessibility */
+.logout-button:focus,
+.logout-button:active {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add focus ring */
+}
+
+/* Small-screen adjustments */
+@media (max-width: 768px) {
+  .logout-button {
+    padding: 0.4rem 0.8rem; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+}
+
